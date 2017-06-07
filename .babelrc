@@ -1,0 +1,18 @@
+{
+	"presets": [
+		["env", {"modules": false}],
+		"latest",
+		"react",
+		"stage-0"
+	],
+  "plugins": [
+  	"react-hot-loader/babel",
+  	["import",{ libraryName: "antd", style: "css" }],
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ]
+}
